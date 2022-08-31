@@ -1,11 +1,7 @@
 import React from "react"
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
-
-import Github from "../assets/Octocat.png";
-import Linkedin from "../assets/linkedin2.png";
-
-
+import { FaLinkedinIn ,FaGithub } from "react-icons/fa";
 
 const Home = (props) => {
 
@@ -26,7 +22,7 @@ const Home = (props) => {
         <div className="grid sm:grid-col-1 md:grid-cols-10 grid-col-1 items-center">
           <div className="col-span-2 bg-blue">
             <Link to='work' smooth={true} duration={500}>
-              <button className='rounded group border-2 px-6 py-3 my-2 flex items-center border-blue-400 hover:text-white hover:bg-blue-400 hover:border-blue-400'>
+              <button className='rounded group border-2 px-6 py-3 my-2 flex items-center border-blue-500 hover:text-white hover:bg-blue-400 hover:border-blue-500'>
                 View Work
                 <span className='group-hover:rotate-90 duration-300'>
                   <HiArrowNarrowRight className='ml-3 ' />
@@ -35,12 +31,11 @@ const Home = (props) => {
             </Link>
           </div>
           <div className="col-span-8 flex flex-row items-center">
-            <a blank href="https://github.com/Sarthak001" className="inline-block rounded-full shadow-lg bg-gray-100 w-16 h-16 border-2 border-gray-100 hover:bg-gray-200 mx-2 p-2 flex hover:border-gray-200 items-center justify-center rounded-full">
-            <img className="w-12 h-12" src={Github} alt="github"></img>
-
+            <a blank href="https://github.com/Sarthak001" className="inline-block rounded-full mx-2 p-3 border-1 text-gray-600 shadow-md border-blue-500 hover:text-white hover:bg-blue-500 active:scale-95">
+            <FaGithub size={30}></FaGithub>
             </a>
-            <a blank href="https://www.linkedin.com/in/sarthaktiwari16/" className="inline-block rounded-full shadow-lg bg-gray-100 w-16 h-16 border-2 border-gray-100 hover:bg-gray-200 mx-2 p-2 flex hover:border-gray-200 items-center justify-center rounded-full">
-            <img className="w-10 h-10" src={Linkedin} alt="linkedin"></img>
+            <a blank href="https://www.linkedin.com/in/sarthaktiwari16/" className="inline-block rounded-full mx-2 p-3 border-1 text-gray-600 shadow-md border-blue-500 hover:text-white hover:bg-blue-500 active:scale-95">
+            <FaLinkedinIn size={30}></FaLinkedinIn>
             </a>
           </div>
         </div>

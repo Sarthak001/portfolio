@@ -22,7 +22,7 @@ const Home = (props) => {
         <div className="grid sm:grid-col-1 md:grid-cols-10 grid-col-1 items-center">
           <div className="col-span-2 bg-blue">
             <Link to='work' smooth={true} duration={500}>
-              <button className='rounded group border-2 px-6 py-3 my-2 flex items-center border-blue-500 hover:text-white hover:bg-blue-400 hover:border-blue-500'>
+              <button className='rounded group border-2 px-6 py-3 my-2 flex items-center border-blue-500 hover:text-white hover:bg-blue-500 hover:border-blue-500'>
                 View Work
                 <span className='group-hover:rotate-90 duration-300'>
                   <HiArrowNarrowRight className='ml-3 ' />
